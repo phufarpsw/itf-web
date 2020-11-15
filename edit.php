@@ -7,10 +7,10 @@ $row = mysqli_fetch_array($res)
 ?>
 <form action = "update.php?ID=<?php echo $row['ID']; ?>" method = "post" id="CommentForm">
     Name:<br>
-    <input type="text" name = "Name" id="idName" value="<?php echo "$row[Name]"; ?>" <br>
+    <input type="text" name = "Name" id="idName" value="<?php echo "$row[name]"; ?>" <br>
     Comment:<br>
-    <input type="text" name = "Comment" id="idComment" value="<?php echo "$row[Comment]"; ?>" <br>
+    <input type="text" name = "Comment" id="idComment" value="<?php echo "$row[comment]"; ?>" <br>
     Link:<br>
-    <input type="text" name = "Link" id="idLink" value="<?php echo "$row[Link]"; ?>"> <br><br>
+    <input type="text" name = "Link" id="idLink" value="<?php echo "$row[link]"; ?>"> <br><br>
     <input type="submit" id="commentBtn"class="btn btn-outline-warning">
   </form>
