@@ -18,6 +18,7 @@
     $row = mysqli_fetch_array($res)
     ?>
     <div class="container">
+    <h2>Edit Form</h2>
     <form action = "update.php?ID=<?php echo $row['ID']; ?>" method = "post" id="CommentForm">
         <label for="Username">Username :</label>
           <input type="text" class="form-control" name = "Name" id="idName" value="<?php echo "$row[Name]"; ?>" <br>
