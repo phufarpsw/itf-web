@@ -12,5 +12,5 @@ $row = mysqli_fetch_array($res)
     <input type="text" name = "Comment" id="idComment" value="<?php echo "$row[comment]"; ?>" <br>
     Link:<br>
     <input type="text" name = "Link" id="idLink" value="<?php echo "$row[link]"; ?>"> <br><br>
-    <input type="submit" id="commentBtn"class="btn btn-outline-warning">
+    <input type="submit" class="btn btn-primary" id="commentBtn">
   </form>
