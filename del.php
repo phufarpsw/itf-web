@@ -1,7 +1,7 @@
 <?php
 $id=$_GET['ID'];
 $conn = mysqli_init();
-mysqli_real_connect($conn, 'databaseitf.mysql.database.azure.com', 'superoof@databaseitf', 'Pin187932', 'itflab', 3306);
+mysqli_real_connect($conn, 'phufarpsw.mysql.database.azure.com', 'phufarpsw@phufarpsw', 'EMLbmk28', 'itflab', 3306);
 $sql="DELETE FROM guestbook WHERE ID='$id'";
 if (mysqli_connect_errno($conn))
 {
